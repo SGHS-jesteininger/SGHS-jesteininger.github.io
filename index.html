@@ -19,24 +19,18 @@
 	<div class="nav-bar"> <!-- https://www.w3schools.com/tags/tag_comment.asp -->
 	
 		<div class="nav-logo-link"> 
-			<a href="#"> <img alt="Sandy Point Logo" src="logo-artwork.jpg" title = "Home Page">  </a> <!-- https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML#:~:text=To%20use%20image%20as%20a,the%20URL%20of%20the%20image. -->
+			<a href="#Home" class="active"> <img alt="Sandy Point Logo" src="logo-artwork.jpg" title = "Home Page">  </a> <!-- https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML#:~:text=To%20use%20image%20as%20a,the%20URL%20of%20the%20image. -->
 		</div>
 	  
-		<div class="nav-link">
-			<a href="#"> About </a>
-		</div>
+	   <div class="nav-link" role="navigation">
+		<a class="nav-item" href="#"> About </a>
+		<a class="nav-item" href="#"> Book </a>
+		<a class="nav-item" href="#"> Gallery </a>
+		<a class="nav-item" href="#"> Contact </a>
 		
-		<div class="nav-link">
-			<a href="#"> Book </a>
 		</div>
-		
-		<div class="nav-link">
-			<a href="#"> Gallery </a>
-		</div>
-		
-		<div class="nav-link">
-			<a href="#"> Contact </a>
-		</div>
+	  
+	
 		
 		<div class="search-box"> <!-- https://www.w3schools.com/howto/howto_css_search_button.asp  *add button-->
 			<form action="/action_page.php">
@@ -122,6 +116,23 @@
 		</div> 
 	</div>
   
+	<div>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+<script>
+<!-- https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 </body>
 </html>

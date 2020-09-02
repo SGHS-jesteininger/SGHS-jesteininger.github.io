@@ -2,3 +2,126 @@ body {
 	margin:0; 
 }  
 
+.banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+/*desktop version */
+@media (min-width:600px) {
+	
+/* https://css-tricks.com/listless-navigation-using-css-to-do-more-with-less/ */ 
+/* https://codepen.io/bkbillma/pen/mKkEv */ 
+
+	.nav-link {
+		background: #green;
+	}
+
+	.nav-item { 
+		padding: 20px;
+		float: right;
+	}
+
+	a {  
+	  text-decoration: none;
+	}
+
+	.nav-item:hover {
+	  background: blue;
+	  color: red;
+	}
+
+	.nav-bar {
+	  background: pink;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Experiment */ 
+
+
+/*
+#nav-link a { 
+	display:block;
+	float: right;
+	text-decoration: none;
+	padding: 10px;	
+}
+
+#nav-link:hover {
+  background: #blue;
+  color: red;
+}
+.nav-bar {
+  background: #1F1F1F;
+  
+  width: 80%;
+  max-width: 1000px;
+  height: 100%;
+  
+  position: absolute;
+  left: 10%
+*/
+
+
+
+/*
+
+/*https://www.w3schools.com/css/css_navbar_horizontal.asp 
+
+.nav-link {
+	float: right;
+	display: block;
+	padding: 8px;
+	color: green; 
+	background-color: red;
+	text-decoration: none;
+	
+}
+.nav-link a: hover {
+  background-color: #blue;
+}
+
+.search-box { 
+	display: block;
+	padding: 8px;
+	background-color: #dddddd;
+}
+
+.nav-logo-link { 
+	display: block;
+	padding: 8px;
+	background-color: #dddddd;
+}
+*/
