@@ -21,16 +21,21 @@
 		<div class="nav-logo-link"> 
 			<a href="#Home" class="active"> <img alt="Sandy Point Logo" src="logo-artwork.jpg" title = "Home Page">  </a> <!-- https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML#:~:text=To%20use%20image%20as%20a,the%20URL%20of%20the%20image. -->
 		</div>
-	  
-	   <div class="nav-link" role="navigation">
-		<a class="nav-item" href="#"> About </a>
-		<a class="nav-item" href="#"> Book </a>
-		<a class="nav-item" href="#"> Gallery </a>
-		<a class="nav-item" href="#"> Contact </a>
 		
+		<div id="phone-nav-link">
+		   <div class="nav-link" role="navigation">
+			<a class="nav-item" href="#"> About </a>
+			<a class="nav-item" href="#"> Book </a>
+			<a class="nav-item" href="#"> Gallery </a>
+			<a class="nav-item" href="#"> Contact </a>
+			</div>
 		</div>
 	  
-	
+		<div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
 		
 		<div class="search-box"> <!-- https://www.w3schools.com/howto/howto_css_search_button.asp  *add button-->
 			<form action="/action_page.php">
@@ -115,17 +120,12 @@
 			<p> text, text, text, text. <a href="#"> Learn more... </a> </p>
 		</div> 
 	</div>
-  
-	<div>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			<i class="fa fa-bars"></i>
-		</a>
-	</div>
+
 
 <script>
 <!-- https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
 function myFunction() {
-  var x = document.getElementById("myLinks");
+  var x = document.getElementById("phone-nav-link");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {

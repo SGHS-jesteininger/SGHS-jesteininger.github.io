@@ -7,7 +7,36 @@ body {
   height: auto;
 }
 
+.nav-logo-link {
+	position: absolute;
+}	
 
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar */ 
+
+.nav-bar #phone-nav-link {
+  display: none;
+}
+.nav-bar a {
+  color: red;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.nav-bar a.icon {
+  background: blue;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* Affect both log an nav abr */
+.nav-bar a:hover {
+  background-color: pink;
+  color: black;
+  opacity; 0.9;
+}
+/* Example end */ 
 
 
 /*desktop version */
