@@ -1,21 +1,59 @@
 body { 
 	margin:0; 
+	padding:0;
 }  
+
+.nav-logo-link img {
+	width:100%;
+	position: relative;
+}
 
 .banner-image img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
-.nav-logo-link {
-	position: absolute;
-}	
+.nav-bar {
+	margin-bottom:0;
+	height:5%; 
+	width:100%;
+}
+
+.search-box input[type="text"]{
+	position: relative; 
+	float: center;
+	max-width: 20%;
+	top: 15%;
+	left:40%;
+	width:30%;
+}
+
+.search-box button[type="submit"]{
+	position: relative;
+	float: center; 
+	left:50%;
+	top: 15;
+	
+}
+
+
 
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar */ 
 
+.nav-bar {
+  overflow: hidden;
+  background-color: yellow;
+  position: relative;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
 .nav-bar #phone-nav-link {
   display: none;
 }
+
+/* Style navigation menu links */
 .nav-bar a {
   color: red;
   padding: 14px 16px;
@@ -23,20 +61,31 @@ body {
   font-size: 17px;
   display: block;
 }
+
+/* Style the hamburger menu */
 .nav-bar a.icon {
   background: blue;
   display: block;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 2%;
+  top: 5%;
 }
-/* Affect both log an nav abr */
+
+/* Affect both log an nav abr */ /* Add a grey background color on mouse-over */
 .nav-bar a:hover {
-  background-color: pink;
+  background-color: green;
   color: black;
   opacity; 0.9;
 }
 /* Example end */ 
+
+
+
+
+
+
+
+
 
 
 /*desktop version */
@@ -45,8 +94,38 @@ body {
 /* https://css-tricks.com/listless-navigation-using-css-to-do-more-with-less/ */ 
 /* https://codepen.io/bkbillma/pen/mKkEv */ 
 
-	.nav-link {
-		background: #green;
+	
+	
+	.nav-logo-link {
+		max-width: 33%; 
+		flex-basis: 100%;
+		float: left; 
+	}
+	
+	.nav-logo-link img{
+		width:100%;
+		
+	}
+	
+	.search-box {
+		max-width: 33%;
+		background-color: green;
+		flex-basis: 100%;
+		float: left; 		
+	}
+	
+	.search-box input[type="text"]{
+		width:100%;
+	}	
+	
+	.phone-nav-link {
+		max-width: 33%; 
+		flex-basis: 100%;
+		float: left; 
+	}
+	
+	.nav-item {
+		background-color: green;
 	}
 
 	.nav-item { 
@@ -66,6 +145,23 @@ body {
 	.nav-bar {
 	  background: pink;
 	}
+	
+	/* https://mekshq.com/faq/voice-adjust-logo-size-small-mobile-devices-screens/ */ 
+	.nav-logo-link img {
+		max-width:300px;
+	}
+	
+	
+	.nav-bar a.icon {
+		display: none;
+	}
+	
+	.nav-bar #phone-nav-link {
+		display: block;
+	}
+	
+	
+	
 }
 
 

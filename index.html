@@ -22,6 +22,18 @@
 			<a href="#Home" class="active"> <img alt="Sandy Point Logo" src="logo-artwork.jpg" title = "Home Page">  </a> <!-- https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML#:~:text=To%20use%20image%20as%20a,the%20URL%20of%20the%20image. -->
 		</div>
 		
+		<div class="search-box"> <!-- https://www.w3schools.com/howto/howto_css_search_button.asp  *add button-->
+			<form action="/action_page.php">
+				<input type="text" id="search" name="search" placeholder="Search.." ><br><br>
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>	
+			
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+	
+		
 		<div id="phone-nav-link">
 		   <div class="nav-link" role="navigation">
 			<a class="nav-item" href="#"> About </a>
@@ -31,18 +43,6 @@
 			</div>
 		</div>
 	  
-		<div>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars"></i>
-			</a>
-		</div>
-		
-		<div class="search-box"> <!-- https://www.w3schools.com/howto/howto_css_search_button.asp  *add button-->
-			<form action="/action_page.php">
-				<input type="text" id="search" name="search" placeholder="Search.." ><br><br>
-				<button type="submit"><i class="fa fa-search"></i></button>
-			</form>	
-		</div>
 	</div>
 	
 	
@@ -132,6 +132,8 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+
 </script>
 
 </body>
