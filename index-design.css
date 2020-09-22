@@ -15,9 +15,7 @@ body {
 
 .banner-image img {
 	width: 100%;
-	display: block;
 }
-
 .search-box input[type="text"]{
 	position: relative; 
 	width:50%
@@ -42,7 +40,7 @@ body {
   display: block;
 }
 
-/* Affect logo */ /* Add a grey background color on mouse-over */
+/* Logo hover */
 #nav-link a:hover {
   background-color: green;
   color: red;
@@ -59,8 +57,12 @@ body {
   opacity; 0.9;
 } 
 
+/* End of code for Navigation Menu - Start Headin and Image */ 
 
-
+.banner-image img {
+	width: 100%;
+	display: block;
+}
 
 
 
@@ -68,11 +70,6 @@ body {
 
 /*desktop version */
 @media (min-width:600px) {
-	
-/* https://css-tricks.com/listless-navigation-using-css-to-do-more-with-less/ */ 
-/* https://codepen.io/bkbillma/pen/mKkEv */ 
-
-	
 	
 	.nav-logo-link {
 		max-width: 33%; 
@@ -109,92 +106,32 @@ body {
 		display: none;
 	}
 	
+	/* End of code for Navigation Menu - Start Headin and Image */ 
+	
+	/* 
+	.banner-title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+		background-color: green; 
+		font-size: 3vw;
+		text-align: center;
+	}
+	
+	.banner { 
+		position: relative;
+		text-align: center;
+		color: white;
+		width: 100%;
+	}
+	
+	*/
+	
+	
+	
+	
+	
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Experiment */ 
-
-
-/*
-#nav-link a { 
-	display:block;
-	float: right;
-	text-decoration: none;
-	padding: 10px;	
-}
-
-#nav-link:hover {
-  background: #blue;
-  color: red;
-}
-.nav-bar {
-  background: #1F1F1F;
-  
-  width: 80%;
-  max-width: 1000px;
-  height: 100%;
-  
-  position: absolute;
-  left: 10%
-*/
-
-
-
-/*
-
-/*https://www.w3schools.com/css/css_navbar_horizontal.asp 
-
-.nav-link {
-	float: right;
-	display: block;
-	padding: 8px;
-	color: green; 
-	background-color: red;
-	text-decoration: none;
-	
-}
-.nav-link a: hover {
-  background-color: #blue;
-}
-
-.search-box { 
-	display: block;
-	padding: 8px;
-	background-color: #dddddd;
-}
-
-.nav-logo-link { 
-	display: block;
-	padding: 8px;
-	background-color: #dddddd;
-}
-*/
