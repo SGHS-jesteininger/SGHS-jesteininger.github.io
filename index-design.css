@@ -13,9 +13,6 @@ body {
 	position: relative;
 }
 
-.banner-image img {
-	width: 100%;
-}
 .search-box input[type="text"]{
 	position: relative; 
 	width:50%
