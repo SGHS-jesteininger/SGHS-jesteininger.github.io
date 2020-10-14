@@ -15,22 +15,24 @@ body {
 .search-box {
 		background-color: pink;
 		float: left;
-		max-width: 50%;
+		max-width: 30%;
 }
 
 .search-box input[type="text"]{
+	margin: 10px;
 	width:100%
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 #nav-link {
 	display: none;
+	padding-top: 71px;
 }
 
 /* Style navigation menu links */
 #nav-link a {
   color: red;
-  padding: 14px;
+  padding: 30px;
   text-decoration: none;
   font-size: 17px;
   display: block;
@@ -44,7 +46,10 @@ body {
 
 /* Style the hamburger menu */
 #ham-button a.icon {
-  background: black;
+	float: right; 
+	margin: 8px;
+	color: white;
+	background: yellow;
 }
 
 #ham-button a:hover {
@@ -87,6 +92,7 @@ body {
 	#nav-link {
 		display: block;
 		float: left; 
+		width:100%;
 	}
 	
 	
