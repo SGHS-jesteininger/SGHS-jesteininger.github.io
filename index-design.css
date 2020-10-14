@@ -5,23 +5,22 @@ body {
 
 .nav-logo-link img {
 	width:100%;
-	position: relative;
 }
 
 .nav-logo-link {
 	background-color: yellow;
-	position: relative;
+}
+
+
+.search-box {
+		background-color: pink;
+		float: left;
+		max-width: 50%;
 }
 
 .search-box input[type="text"]{
-	position: relative; 
-	width:50%
+	width:100%
 }
-
-.search-box button[type="submit"]{
-	position: relative;
-}
-
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 #nav-link {
@@ -51,12 +50,12 @@ body {
 #ham-button a:hover {
   background-color: green;
   color: black;
-  opacity; 0.9;
+  opacity: 0.9;
 } 
 
 /* End of code for Navigation Menu - Start Headin and Image */ 
 
-.banner-image img {
+.banner img {
 	width: 100%;
 	display: block;
 }
@@ -64,13 +63,11 @@ body {
 
 
 
-
 /*desktop version */
-@media (min-width:600px) {
+@media (min-width:834px) {
 	
 	.nav-logo-link {
-		max-width: 33%; 
-		flex-basis: 100%;
+		max-width: 42%;	
 		float: left; 
 	}
 	
@@ -79,11 +76,19 @@ body {
 	}
 	
 	.search-box {
-		background-color: green;
+		background-color: pink;
+		max-width: 40%;
+		float: left;
 	}
 	.search-box input[type="text"]{
-		width:40%;
+		width:100%;
 	}
+	
+	#nav-link {
+		display: block;
+		float: left; 
+	}
+	
 	
 	#nav-link a {
 		background-color: green;
@@ -95,17 +100,16 @@ body {
 	  color: red;
 	}
 	
-	#nav-link {
-		display: block;
-	}
 	
 	#ham-button a.icon {
 		display: none;
 	}
 	
-	/* End of code for Navigation Menu - Start Headin and Image */ 
 	
-	/* 
+	
+	/* End of code for Navigation Menu - Start Heading and Image */
+	
+	/*
 	.banner-title {
 		position: absolute;
 		top: 50%;
@@ -115,20 +119,13 @@ body {
 		background-color: green; 
 		font-size: 3vw;
 		text-align: center;
+		
 	}
 	
 	.banner { 
 		position: relative;
 		text-align: center;
 		color: white;
-		width: 100%;
 	}
-	
 	*/
-	
-	
-	
-	
-	
-	
 }
