@@ -13,14 +13,16 @@ body {
 
 
 .search-box {
-		background-color: pink;
-		float: left;
-		max-width: 30%;
+	float: left;
+	max-width: 30%;
+	padding-top:3%;
+	padding-left:2%; 
 }
 
 .search-box input[type="text"]{
-	margin: 10px;
-	width:100%
+	width:100%;
+	width: 200px; 
+	height: 30px;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
