@@ -7,10 +7,6 @@ body {
 	width:100%;
 }
 
-.nav-logo-link {
-	background-color: yellow;
-}
-
 
 .search-box {
 	float: left;
@@ -69,9 +65,6 @@ body {
 	display: block;
 }
 
-
-
-
 /*desktop version */
 @media (min-width:834px) {
 	
@@ -85,26 +78,72 @@ body {
 	}
 	
 	.search-box {
-		background-color: pink;
 		max-width: 40%;
 		float: left;
+		padding-top:3%;	
 	}
 	.search-box input[type="text"]{
 		width:100%;
+		width: 200px; 
+		height: 30px;
 	}
 	
-	#nav-link {
-		display: block;
+	
+	#nav-link { 
+		display: block; 
 		float: left; 
-		width:100%;
-	}
+		width: 40%;
+		max-width: 15%;
+		background-color: green; 
+		
+		/* psition of green */ 
+		padding-left: 5%; 
+		padding-top: 1%; 
+		padding-right: 1%; 
+		padding-bottom:1%; 
+		
+		
+	
+	} 
+	
+	#nav-link a { 
+		font-size: 20px; 
+		padding: 8%;
+		margin: 1px; 
+		text-align: center;  
+		background-color: pink; 
+		
 	
 	
-	#nav-link a {
-		background-color: green;
+	} 
+	
+	
+	/*
+	#nav-link {
+		padding-top: 4%; 
+		display: block;
 		float: right;
+		width: 30%; 
+		padding: 0;	
+		background-color: pink; 
 	}
 
+	#nav-link a {
+		width: 20%; 
+		padding-top: 5%; 
+		padding-bottom: 5%; 
+		padding-right: 10%;
+		padding-left: 10%; 
+		margin: 1;
+		background-color: green;
+		float: center;
+		text-decoration: none;
+		font-size: 15px;
+		display: block;
+	}
+	
+	*/ 
+	
 	#nav-link a:hover {
 	  background: blue;
 	  color: red;
@@ -115,7 +154,39 @@ body {
 		display: none;
 	}
 	
+	/*
+
+@media (min-width: 1210px) {
 	
+	
+	#nav-link {
+	
+		display: block;
+		float: right;
+		width: 38%; 
+		padding: 0;	
+		background-color: pink; 
+		margin: auto; 
+	}
+
+	#nav-link a {
+		background-color: green;
+		float: right;
+		height: 4px;
+		padding-top: 1%; 
+		margin: 1%; 
+		text-decoration: none;
+		font-size: 20px;
+		display: block;
+	}
+	
+
+	
+	
+}	
+
+*/ 
+
 	
 	/* End of code for Navigation Menu - Start Heading and Image */
 	
