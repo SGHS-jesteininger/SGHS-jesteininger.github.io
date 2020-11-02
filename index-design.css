@@ -110,7 +110,7 @@ body {
 	line-height: 1.5;
 }
 
-/* Design copy */ 
+/* Design layout W3 schoool help */ 
 #scroll-button{
   display: none;
   position: fixed;
@@ -131,7 +131,7 @@ body {
 #scroll-button:hover {
   background-color: yellow;
 }
- /* chnage this design */ 
+
 
 /*desktop version */
 @media (min-width:834px) {
@@ -194,14 +194,29 @@ body {
 	.section-image img {
 		padding: 2%;
 		width: 40%;
-		display: block;
+		display: inline-block;
 		margin: 0; 
+		float: left; 
 	}
 	
-	.section-title{
-	}
 
 	.section-text {
+	}
+	
+	
+
+	.section-text {
+		width: 46%; 
+		font-size: 2vw; 
+		float: right; 
+		padding-top: 5%; 
+		padding-left: 5%; 
+		padding-right: 5%; 
+		padding-bottom: 5%; 
+		display: inline-block; 
+		text-align: justify;
+		text-justify: inter-word;
+		line-height: 1.5;
 	}
 	
 }
