@@ -96,6 +96,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	
+	
 }
 
 .section-title{
@@ -113,8 +114,7 @@ body {
 .section-text {
 	padding-left: 5%; 
 	padding-right: 5%; 
-	padding-bottom: 5%; 
-	
+	padding-bottom: 3%; 
 	text-align: justify;
 	text-justify: inter-word;
 	line-height: 1.5;
@@ -142,7 +142,27 @@ body {
   background-color: yellow;
 }
 
+.slide-show { 
+	float: left;
+	width: 100%; 
+	text-align: center; 
+	padding-bottom: 1%; 
+		
+		
+	} 
+	
+.left { 
+	padding-right: 10%; 
+	display: inline-blcok; 
+	
+}
 
+.right { 
+	padding-left: 10%; 
+	
+}
+	
+	
 
 /*desktop version */
 @media (min-width:834px) {
@@ -230,12 +250,14 @@ body {
 		float: left;
 		width: 100%; 
 		padding-left: 10%;
-		padding-bottom: 1%; 
+		padding-bottom: 1%;
+		text-align: left; 		
 		
 	} 
 	
 	.left { 
 		padding-right: 10%; 
+		display: inline-blcok; 
 		
 	}
 	
@@ -244,7 +266,10 @@ body {
 		
 	}
 	
-	
+	#scroll-button {
+		position: sticky; 
+	}
+		
 }
 	
 	

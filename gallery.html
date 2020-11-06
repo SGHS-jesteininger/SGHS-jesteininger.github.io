@@ -48,17 +48,17 @@
 		
 	</div>
 	
+	<!-- Start Here -->
 	
-	
-	<div id="about-information">
+	<div id="lux-gallery">
 		<div class="section-title">
 			<h2> Luxury Room </h2>
 		</div>
 		
 		<div class="section-image"> 
-			<img class="gallery" src="calender-homepage.jpg" >
-			<img class="gallery" src="room-homepage.jpg" >
-			<img class="gallery" src="owner-homepage.jfif">
+			<img class="galleryA" src="calender-homepage.jpg" >
+			<img class="galleryA" src="room-homepage.jpg" >
+			<img class="galleryA" src="owner-homepage.jfif">
 		</div>
 			
 		
@@ -67,42 +67,56 @@
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text.
-			 </p>
+			</p>
 		</div> 
 		
 		<div class="slide-show"> 
-			<button class="left" onclick="plusDivs(-1)">&#10094;</button>
-			<button class="right" onclick="plusDivs(1)">&#10095;</button>
+			<button class="left" onclick="plusDivsA(-1)">&#10094;</button>
+			<button class="right" onclick="plusDivsA(1)">&#10095;</button>
 		</div>
 		
 	</div>
 	
 	
-	<div id="booking-information">
+	<div id="fam-gallery">
 		<div class="section-title">
 			<h2> family Room </h2>
 		</div>
 		
+		<div class="section-image"> 
+			<img class="galleryB" src="calender-homepage.jpg" >
+			<img class="galleryB" src="room-homepage.jpg" >
+			<img class="galleryB" src="owner-homepage.jfif">
+		</div>
+			
+		
 		<div class="section-text">
 			<p> text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text.
-			 </p>
+			</p>
 		</div> 
+		
+		<div class="slide-show"> 
+			<button class="left" onclick="plusDivsB(-1)">&#10094;</button>
+			<button class="right" onclick="plusDivsB(1)">&#10095;</button>
+		</div>
 		
 	</div>
 	
 	
-  <div id="gallery-information">
+  <div id="single-gallery">
 		<div class="section-title">
 			<h2> Single Room </h2>
 		</div>
 		
-		<div class="section-image">
-			<img src="#" alt = "Picture of a Single Room" title = "Single Room" >  
+		<div class="section-image"> 
+			<img class="galleryC" src="calender-homepage.jpg" >
+			<img class="galleryC" src="room-homepage.jpg" >
+			<img class="galleryC" src="owner-homepage.jfif">
 		</div>
-		 
+			
 		
 		<div class="section-text">
 			<p> text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
@@ -111,17 +125,25 @@
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text.
 			</p>
 		</div> 
+		
+		<div class="slide-show"> 
+			<button class="left" onclick="plusDivsC(-1)">&#10094;</button>
+			<button class="right" onclick="plusDivsC(1)">&#10095;</button>
+		</div>
 	</div>
 	
 	
-	<div id="contact-information">
+	<div id="party-gallery">
 		<div class="section-title">
 			<h2> Party Room </h2>
 		</div> 
 		
-		<div class="section-image">
-			<img src="#" alt = "Picture of Party Room" title = "Party Room" >  
+		<div class="section-image"> 
+			<img class="galleryD" src="calender-homepage.jpg" >
+			<img class="galleryD" src="room-homepage.jpg" >
+			<img class="galleryD" src="owner-homepage.jfif">
 		</div>
+			
 		
 		<div class="section-text">
 			<p> text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
@@ -130,6 +152,11 @@
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text.
 			</p>
 		</div> 
+		
+		<div class="slide-show"> 
+			<button class="left" onclick="plusDivsD(-1)">&#10094;</button>
+			<button class="right" onclick="plusDivsD(1)">&#10095;</button>
+		</div>
 	</div>
 
 	<div id="return-button">
@@ -137,6 +164,10 @@
 		
 	</div> 
 
+	<!-- Start Here -->
+	
+	
+	
 <script>
 //https://www.w3schools.com/howto/howto_js_mobile_navbar.asp//
 function myFunction() {
@@ -171,22 +202,82 @@ function topFunction() {
 }
 
 // --------------------------------------------------- https://www.w3schools.com/w3css/w3css_slideshow.asp ---------------//
-var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+
+// Gallery A // 
+var slideIndexA = 1;
+showDivsA(slideIndexA);
+
+function plusDivsA(n) {
+  showDivsA(slideIndexA += n);
 }
 
-function showDivs(n) {
+function showDivsA(n) {
   var i;
-  var x = document.getElementsByClassName("gallery");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
+  var x = document.getElementsByClassName("galleryA");
+  if (n > x.length) {slideIndexA = 1}
+  if (n < 1) {slideIndexA = x.length}
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndexA-1].style.display = "block";  
+}
+
+// Gallery B // 
+var slideIndexB = 1;
+showDivsB(slideIndexB);
+
+function plusDivsB(n) {
+  showDivsB(slideIndexB += n);
+}
+
+function showDivsB(n) {
+  var i;
+  var x = document.getElementsByClassName("galleryB");
+  if (n > x.length) {slideIndexB = 1}
+  if (n < 1) {slideIndexB = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndexB-1].style.display = "block";  
+}
+
+// Gallery C // 
+var slideIndexC = 1;
+showDivsC(slideIndexC);
+
+function plusDivsC(n) {
+  showDivsC(slideIndexC += n);
+}
+
+function showDivsC(n) {
+  var i;
+  var x = document.getElementsByClassName("galleryC");
+  if (n > x.length) {slideIndexC = 1}
+  if (n < 1) {slideIndexC = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndexC-1].style.display = "block";  
+}
+
+// Gallery D // 
+var slideIndexD = 1;
+showDivsD(slideIndexD);
+
+function plusDivsD(n) {
+  showDivsD(slideIndexD += n);
+}
+
+function showDivsD(n) {
+  var i;
+  var x = document.getElementsByClassName("galleryD");
+  if (n > x.length) {slideIndexD = 1}
+  if (n < 1) {slideIndexD = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndexD-1].style.display = "block";  
 }
 
 </script>
