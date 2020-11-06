@@ -16,7 +16,7 @@
 <body>
 
 	<div class="banner-image">
-		<div class="banner-title" title = "Location on Website" > HOME PAGE </div> 
+		<div class="banner-title" title = "Location on Website" > GALLERY PAGE </div> 
 	<div class="banner-image">
 
 	<div class="nav-logo-link"> 
@@ -49,32 +49,38 @@
 	</div>
 	
 	
+	
 	<div id="about-information">
 		<div class="section-title">
-			<h2> About </h2>
+			<h2> Luxury Room </h2>
 		</div>
 		
-		<div class="section-image">
-			<img src="area-homepage.jpg" alt = "Picture of Sandy Point Surroundings" title = "About" >  
+		<div class="section-image"> 
+			<img class="gallery" src="calender-homepage.jpg" >
+			<img class="gallery" src="room-homepage.jpg" >
+			<img class="gallery" src="owner-homepage.jfif">
 		</div>
+			
 		
 		<div class="section-text">
 			<p> text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text.
-			<a href="about.html"> Learn more... </a> </p>
+			 </p>
 		</div> 
+		
+		<div class="slide-show"> 
+			<button class="left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="right" onclick="plusDivs(1)">&#10095;</button>
+		</div>
+		
 	</div>
 	
 	
 	<div id="booking-information">
 		<div class="section-title">
-			<h2> Booking </h2>
-		</div>
-		
-		<div class="section-image">
-			<img src="calender-homepage.jpg" alt = "Picture of Calender" title = "Booking" >  
+			<h2> family Room </h2>
 		</div>
 		
 		<div class="section-text">
@@ -82,18 +88,19 @@
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text.
-			<a href="book.html"> Learn more... </a> </p>
+			 </p>
 		</div> 
+		
 	</div>
 	
 	
   <div id="gallery-information">
 		<div class="section-title">
-			<h2> Gallery </h2>
+			<h2> Single Room </h2>
 		</div>
 		
 		<div class="section-image">
-			<img src="room-homepage.jpg" alt = "Picture of a Single Room" title = "Gallery" >  
+			<img src="#" alt = "Picture of a Single Room" title = "Single Room" >  
 		</div>
 		 
 		
@@ -102,19 +109,18 @@
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text.
-			
-			<a href="gallery.html"> Learn more... </a> </p>
+			</p>
 		</div> 
 	</div>
 	
 	
 	<div id="contact-information">
 		<div class="section-title">
-			<h2> Contact </h2>
+			<h2> Party Room </h2>
 		</div> 
 		
 		<div class="section-image">
-			<img src="owner-homepage.jfif" alt = "Picture of Owners" title = "Contact" >  
+			<img src="#" alt = "Picture of Party Room" title = "Party Room" >  
 		</div>
 		
 		<div class="section-text">
@@ -122,7 +128,7 @@
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text, text. 
 			text, text, text, text. text, text, text, text. text, text, text, text. text, text, text.
-			<a href="contact.html"> Learn more... </a> </p>
+			</p>
 		</div> 
 	</div>
 
@@ -164,7 +170,24 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+// --------------------------------------------------- https://www.w3schools.com/w3css/w3css_slideshow.asp ---------------//
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("gallery");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
 
 </script>
 
@@ -173,3 +196,4 @@ function topFunction() {
 
 
 <!-- Sample Reference of _item__ from ___website-name_____ link____ -->
+	
