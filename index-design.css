@@ -43,7 +43,8 @@ body {
 
 /* Logo hover */
 #nav-link a:hover {
-  background-color: green;
+  background-color: #9CC754;
+  opacity: 0.8;
   color: red;
 }
 
@@ -56,7 +57,7 @@ body {
 }
 
 #ham-button a:hover {
-  background-color: green;
+  background-color: #9CC754;
   color: yellow;
   opacity: 0.9;
 } 
@@ -72,7 +73,7 @@ body {
 .banner-title { 
 	display: inline-block; 
     opacity: 0.9; 
-	background-color: green; 
+	background-color: #9cc754; 
 	position: fixed; 
 	font-size: 15px; 
 	border: none;
@@ -109,7 +110,7 @@ body {
 	margin: 0; 
 	display: inline-block; 
 	font-size: 15px; 
-	background-color: pink; 
+	background-color: #e4e082; 
 	text-align: left;
 	
 }
@@ -132,12 +133,12 @@ body {
   font-size: 15px;
   border: none;
   outline: none;
-  background-color: green;
+  background-color: #9cc754;
   color: white;
   cursor: pointer;
   width: 100%; 
   padding: 1%;
-  opacity: 0.5; 
+  opacity: 0.6; 
  
   
 }
@@ -215,7 +216,8 @@ body {
 	} 
 	
 	#nav-link a:hover {
-	  background: blue;
+	  background: #9CC754;
+      opacity: 0.8; 
 	  color: red;
 	}
 	
